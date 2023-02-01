@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program using string methods</title>
+</head>
+    
+<body>
+<button onclick="leapyear()">Leap year(2005-2023)</button>
+    <button onclick="check()">Print year(2005-2023)</button>
+<script>
+    var old=2005;
+	var current=2023
+	var year=[];
+	var leap=[];
+	function check(){
+	for(old=2005; old<current; old++){
+	    year.push(old)
+	}	
+	console.log(year)
+	}
+	
+	function leapyear(){
+	for(old=2005; old<current; old++){
+		if(old%4==0){
+		    leap.push(old)	
+		}	
+	}
+	console.log(leap) 	
+	}
+
+</script>
+</body>
+</html>
